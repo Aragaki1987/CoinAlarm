@@ -12,7 +12,7 @@ import java.util.Date;
 public class Bittrex implements Exchange{
     private boolean success;
     private String message;
-    private List<BittrexCoin> result;
+    private List<BittrexCoin> coins;
 
     @JsonIgnore
     private Date loadTime;
@@ -33,12 +33,12 @@ public class Bittrex implements Exchange{
         this.message = message;
     }
 
-    public List<BittrexCoin> getResult() {
-        return result;
+    public List<BittrexCoin> getCoins() {
+        return coins;
     }
 
-    public void setResult(List<BittrexCoin> result) {
-        this.result = result;
+    public void setCoins(List<BittrexCoin> coins) {
+        this.coins = coins;
     }
 
     public Date getLoadTime() {
